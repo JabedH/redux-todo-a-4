@@ -1,11 +1,12 @@
-import { colorSelected } from "../actions";
+import { updatedText } from "../actions";
 
-const updateColor = (todoId, color) => {
+const updateTodoText = (todoId, text) => {
+  console.log(todoId);
   return async (dispatch) => {
     const response = await fetch(`http://localhost:9000/todos/${todoId}`, {
       method: "PATCH",
       body: JSON.stringify({
-        color: color,
+        text: text,
       }),
       headers: {
         "Content-type": "application/json; charset=UTF-8",
@@ -13,8 +14,8 @@ const updateColor = (todoId, color) => {
     });
     const todo = await response.json();
 
-    dispatch(colorSelected(todo.id, todo.color));
+    dispatch(updatedText(todo.id, todo.text));
   };
 };
 
-export default updateColor;
+export default updateTodoText;

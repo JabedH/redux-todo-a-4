@@ -8,19 +8,19 @@
 
 <!-- GET HTML TEMPLATE -->
 
-## ![htmlIcon][htmlicon-shield] Get HTML Template
+##  Get HTML Template
 
 You can find the raw HTML template of the todo application from the "html_template" folder.
 
 <!-- GET SERVER TEMPLATE -->
 
-## ![serverIcon][servericon-shield] Get SERVER Template
+## Get SERVER Template
 
 You can find the raw SERVER template of the todo application from the "lws-json-server-todos" folder.
 
 <!-- HOW TO RUN -->
 
-## ![rocketIcon][rocketicon-shield] How to run
+## How to run
 
 Please follow the below instructions to run this branch in your machine:
 

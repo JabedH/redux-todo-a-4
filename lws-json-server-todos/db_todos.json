@@ -1,22 +1,24 @@
 {
   "todos": [
     {
-      "text": "Learn Redux Toolkit",
+      "text": "Learn Redux Toolkit ADSFDF",
       "completed": false,
-      "id": 7
+      "id": 7,
+      "color": "red"
     },
     {
-      "text": "Test",
+      "text": "Test SD,CVHVDSA",
       "completed": false,
-      "id": 8
+      "id": 8,
+      "color": "red"
     },
     {
-      "text": "hdjhdjhdjsdh",
+      "text": "hdjhdjhdjsdh XFFVBBFXDVVB",
       "completed": false,
       "id": 9
     },
     {
-      "text": "vhjkhi",
+      "text": "vhjkhi SFDGVFDSGFDG",
       "completed": false,
       "id": 10
     },

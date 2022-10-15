@@ -5,13 +5,13 @@ import editImage from "../assets/images/edit.png";
 import deleteTodo from "../redux/todos/thunk/deleteTodo";
 import updateColor from "../redux/todos/thunk/updateColor";
 import updateStatus from "../redux/todos/thunk/updateStatus";
+import updateTodoText from "../redux/todos/thunk/updateTodoText";
 
 export default function Todo({ todo }) {
   const [edit, setEdit] = useState(false);
-  // const [addFormData, setAddFormData] = useState(newData);
-  const [editFormData, setEditFormData] = useState();
+  const [editFormData, setEditFormData] = useState(null);
 
-  console.log(editFormData);
+  // console.log(editFormData);
 
   const dispatch = useDispatch();
 
@@ -33,10 +33,17 @@ export default function Todo({ todo }) {
     setEditFormData(myText);
   };
 
-  const handleEditFormChange = (event) => {
-    event.preventDefault();
+  const handleSave = (todoId, e) => {
+    // e.preventDefault();
+    console.log(editFormData);
+    const text = editFormData;
+    console.log(todoId);
+    dispatch(updateTodoText(todoId, text));
   };
-
+  const handleGtData = (e) => {
+    e.preventDefault();
+    console.log(e.target.name.value);
+  };
   return (
     <div className="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0">
       <div
@@ -73,10 +80,14 @@ export default function Todo({ todo }) {
 
           <button
             className="flex-shrink-0  h-4 ml-2 cursor-pointer"
-            onClick={() => handleEdit(!edit)}
+            onClick={() => {
+              handleSave(id);
+              handleEdit(!edit);
+            }}
           >
             Save
           </button>
+
           <button
             className="flex-shrink-0  h-4 ml-2 cursor-pointer text-red-400"
             onClick={() => handleEdit(!edit)}
