@@ -11,7 +11,7 @@ const CompleteTodos = () => {
   };
   return (
     <div className="p-5">
-      <div className="mt-2 text-gray-700 text-sm min-h-[300px] overflow-y-auto">
+      <div className="mt-2 text-gray-700 text-sm min-h-[100px] overflow-y-auto">
         {todos.filter(filterByCompleted).map((todo) => (
           <CompleteTodo todo={todo} key={todo.id} />
         ))}

@@ -38,7 +38,7 @@
     },
     {
       "text": "New Todo",
-      "completed": true,
+      "completed": false,
       "id": 7
     },
     {

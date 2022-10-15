@@ -1,15 +1,10 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import cancelImage from "../assets/images/cancel.png";
-import editImage from "../assets/images/edit.png";
 import deleteTodo from "../redux/todos/thunk/deleteTodo";
-import updateColor from "../redux/todos/thunk/updateColor";
 import updateStatus from "../redux/todos/thunk/updateStatus";
-import updateTodoText from "../redux/todos/thunk/updateTodoText";
 
 export default function CompleteTodo({ todo }) {
-  const [edit, setEdit] = useState(false);
-  const [editFormData, setEditFormData] = useState(null);
 
   const dispatch = useDispatch();
 
@@ -17,7 +12,9 @@ export default function CompleteTodo({ todo }) {
   const handleStatusChange = (todoId) => {
     dispatch(updateStatus(todoId, completed));
   };
-
+  const handleDelete = (todoId) => {
+    dispatch(deleteTodo(todoId));
+  };
   return (
     <div className="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0">
       {completed}
@@ -44,6 +41,12 @@ export default function CompleteTodo({ todo }) {
       <div className={`select-none flex-1 ${completed && "line-through"}`}>
         {text}
       </div>
+      <img
+        src={cancelImage}
+        className="flex-shrink-0 w-4 h-4 ml-2 cursor-pointer"
+        alt="Cancel"
+        onClick={() => handleDelete(id)}
+      />
     </div>
   );
 }

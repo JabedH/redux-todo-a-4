@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import fetchTodos from "../redux/todos/thunk/fetchTodos";
-import CompleteTodo from "./CompleteTodo";
 import Todo from "./Todo";
 
 export default function TodoList() {
@@ -42,7 +41,7 @@ export default function TodoList() {
   };
   return (
     <div className="lg:p-5 p-2">
-      <div className="mt-2 text-gray-700 text-sm min-h-[300px] overflow-y-auto">
+      <div className="mt-2 text-gray-700 text-sm min-h-[100px] overflow-y-auto">
         {todos
           .filter(filterByStatus)
           .filter(filterByColors)
