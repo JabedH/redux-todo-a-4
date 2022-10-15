@@ -7,30 +7,58 @@
       "color": "red"
     },
     {
-      "text": "Test SD,CVHVDSA",
-      "completed": false,
+      "text": "Test SD,CVHVDSA ghjg",
+      "completed": true,
       "id": 8,
       "color": "red"
     },
     {
       "text": "hdjhdjhdjsdh XFFVBBFXDVVB",
-      "completed": false,
-      "id": 9
+      "completed": true,
+      "id": 9,
+      "color": "yellow"
     },
     {
       "text": "vhjkhi SFDGVFDSGFDG",
-      "completed": false,
+      "completed": true,
       "id": 10
     },
     {
-      "text": "jkljkl",
-      "completed": false,
-      "id": 11
+      "text": "sdfsdf",
+      "completed": true,
+      "id": 21,
+      "color": "green"
     },
     {
-      "text": "jkljkkljk",
+      "text": "sdfsfd",
+      "completed": true,
+      "id": 22,
+      "color": "yellow"
+    },
+    {
+      "text": "sdfvfrsdgfrg",
+      "completed": true,
+      "id": 23
+    },
+    {
+      "text": "cfvsffvsdffv",
+      "completed": true,
+      "id": 24
+    },
+    {
+      "text": "sfvdfsfv",
+      "completed": true,
+      "id": 25
+    },
+    {
+      "text": "cvcdvgb",
       "completed": false,
-      "id": 12
+      "id": 26
+    },
+    {
+      "text": "ddghfdgh",
+      "completed": false,
+      "id": 27
     }
   ]
 }

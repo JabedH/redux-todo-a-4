@@ -48,7 +48,7 @@ export default function Header() {
                 ></button>
             </form>
 
-            <ul className="flex justify-between my-4 text-xs text-gray-500">
+            {/* <ul className="flex justify-between my-4 text-xs text-gray-500">
                 <li
                     className="flex space-x-1 cursor-pointer"
                     onClick={completeHadler}
@@ -59,7 +59,7 @@ export default function Header() {
                 <li className="cursor-pointer" onClick={clearHeandler}>
                     Clear completed
                 </li>
-            </ul>
+            </ul> */}
         </div>
     );
 }

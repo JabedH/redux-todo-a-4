@@ -11,12 +11,9 @@ export default function Todo({ todo }) {
   const [edit, setEdit] = useState(false);
   const [editFormData, setEditFormData] = useState(null);
 
-  // console.log(editFormData);
 
   const dispatch = useDispatch();
-
   const { text, id, completed, color } = todo;
-
   const handleStatusChange = (todoId) => {
     dispatch(updateStatus(todoId, completed));
   };
@@ -34,18 +31,15 @@ export default function Todo({ todo }) {
   };
 
   const handleSave = (todoId, e) => {
-    // e.preventDefault();
     console.log(editFormData);
     const text = editFormData;
     console.log(todoId);
     dispatch(updateTodoText(todoId, text));
   };
-  const handleGtData = (e) => {
-    e.preventDefault();
-    console.log(e.target.name.value);
-  };
   return (
+    
     <div className="flex justify-start items-center p-2 hover:bg-gray-100 hover:transition-all space-x-4 border-b border-gray-400/20 last:border-0">
+      {completed}
       <div
         className={`relative rounded-full bg-white border-2 border-gray-400 w-5 h-5 flex flex-shrink-0 justify-center items-center mr-2 ${
           completed && "border-green-500 focus-within:border-green-500"
