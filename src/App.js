@@ -17,7 +17,7 @@ function App() {
           Welcome to redux <br /> todo application
         </h3>
         <p className="lg:text-2xl text-xl font-bold text-center lg:m-10 mt-5 text-gray-700">
-          Create your todo and complete it, Makes life easier.
+          Create your todo and complete it, Make Life Easier.
         </p>
         <div className=" rounded-lg p-6 ">
           <div className="flex justify-center mb-10">
