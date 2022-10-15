@@ -13,8 +13,8 @@ function App() {
     <Provider store={store}>
       <div className=" bg-blue-100 lg:h-screen  font-sans">
         <Navbar />
-        <h3 className="lg:text-5xl uppercase text-3xl font-bold text-center mt-10 text-violet-600">
-          Welcome to redux todo application
+        <h3 className="lg:text-5xl lg:leading-relaxed leading-relaxed uppercase text-3xl font-bold text-center mt-10 text-violet-600">
+          Welcome to redux <br /> todo application
         </h3>
         <p className="lg:text-2xl text-xl font-bold text-center lg:m-10 mt-5 text-gray-700">
           Create your todo and complete it, Makes life easier.
@@ -25,7 +25,7 @@ function App() {
               <Header />
             </div>
           </div>
-          <div className="lg:grid grid-cols-2 gap-10 ">
+          <div className="lg:grid grid-cols-2 gap-10 my-10">
             <div className="">
               <h3 className="text-center m-3 text-2xl font-bold text-gray-700">
                 Added Todo List
