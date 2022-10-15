@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "text": "Learn Redux Toolkit",
+      "completed": false,
+      "id": 7
+    },
+    {
+      "text": "Test",
+      "completed": false,
+      "id": 8
+    },
+    {
+      "text": "hdjhdjhdjsdh",
+      "completed": false,
+      "id": 9
+    },
+    {
+      "text": "vhjkhi",
+      "completed": false,
+      "id": 10
+    },
+    {
+      "text": "jkljkl",
+      "completed": false,
+      "id": 11
+    },
+    {
+      "text": "jkljkkljk",
+      "completed": false,
+      "id": 12
+    }
+  ]
+}
